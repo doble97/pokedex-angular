@@ -1,0 +1,19 @@
+header{
+    background-color: brown;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.title{
+    background-color:yellow;
+    width: 50%;
+}
+nav{
+    background-color: turquoise;
+    margin: 1rem;
+
+}
+.content{
+    height: 90vh;
+}
