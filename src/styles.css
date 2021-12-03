@@ -1,9 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "Pokemon";
+    src: url('./assets//fonts//Pokemon-Solid.ttf');
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-body{
-    background-color: blue;
 }

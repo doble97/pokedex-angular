@@ -1,19 +1,43 @@
 header{
-    background-color: brown;
+    background-color: rgb(196, 16, 52);
     height: 10vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 .title{
-    background-color:yellow;
     width: 50%;
+    color:white;
+    font-family: 'Pokemon', Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    letter-spacing: 0.2em;
 }
 nav{
-    background-color: turquoise;
-    margin: 1rem;
-
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+a{
+    margin:1rem;
+    text-decoration: none;
+    color:white;
+    height: 100%;
+    display: flex;
+    width: 20%;
+    align-items: center;/* align vertical*/
+    justify-content: center; /* align horizontal*/
+}
+a:hover{
+    background-color: brown;
 }
 .content{
     height: 90vh;
+    /* background-color: #90A9B7; */
+    background-color: rgb(207,216,222);
+    overflow-y: auto;
 }
+.content::-webkit-scrollbar {
+    display: none;
+  }

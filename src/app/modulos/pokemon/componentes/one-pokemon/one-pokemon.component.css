@@ -1,0 +1,21 @@
+div{
+    display: flex;
+    margin: 4rem auto;
+    padding: 0.2rem;
+    /* background-color: chocolate; */
+    background-color: rgb(144,169,183);
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    border: 1px black solid;
+    width: 50%;
+    border-radius: 1rem;
+}
+img{
+    border: 2px blueviolet solid;
+    border-radius: 50%;
+}
+
+div:hover img{
+    background-color: chocolate;
+}
