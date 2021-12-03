@@ -1,21 +1,15 @@
-<div>
+<div *ngIf="pokemon" (click)="addPokemon()" [ngClass]="{'pk-favorite': isFavorite}">
     <img src="{{pokemon.img}}" alt="Pokemon dito">
-    <table border="solid">
-        <thead>
-            <tr>
-                <th>
-                    Nombre
-                </th>
-                <th>Habilidades</th>
-                <th>Tipo</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>{{pokemon.name}}</td>
-                <td>{{pokemon.abilities}}</td>
-                <td>{{pokemon.tipo}}</td>
-            </tr>
-        </tbody>
-    </table>
+
+    <ul>
+        <li><h3>Nombre</h3> {{pokemon.name}}</li>
+        <li><h3>Habilidades</h3> {{pokemon.abilities}}</li>
+        <li><h3>Tipo</h3> {{pokemon.tipo}}</li>
+    </ul>
 </div>
+
+<!-- <ng-template #loading>
+    <div class="loading-pokemon">
+        
+    </div>
+</ng-template> -->

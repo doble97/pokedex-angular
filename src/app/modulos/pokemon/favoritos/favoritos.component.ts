@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Pokemon } from 'src/app/entidades/pokemon';
+import { FavoritosService } from 'src/app/shared/services/favoritos.service';
 
 @Component({
   selector: 'app-favoritos',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FavoritosComponent implements OnInit {
 
-  constructor() { }
+  public pokemons!: Array<Pokemon>
+
+  constructor(public favoritos:FavoritosService) {
+
+   }
 
   ngOnInit(): void {
+    this.pokemons = this.favoritos.getFavoritePokemons()
   }
 
 }

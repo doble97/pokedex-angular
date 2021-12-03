@@ -3,4 +3,5 @@ export interface Pokemon{
     name?: string
     abilities?: string[]
     tipo?: string[]
+    id: number
 }

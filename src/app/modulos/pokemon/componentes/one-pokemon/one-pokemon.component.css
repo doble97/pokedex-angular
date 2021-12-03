@@ -1,15 +1,18 @@
 div{
     display: flex;
     margin: 4rem auto;
-    padding: 0.2rem;
+    padding: 0.4rem;
     /* background-color: chocolate; */
     background-color: rgb(144,169,183);
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 2rem;
     border: 1px black solid;
-    width: 50%;
+    width: 30%;
+    min-width: fit-content;
     border-radius: 1rem;
+    margin: 1rem;
+    cursor: pointer;
 }
 img{
     border: 2px blueviolet solid;
@@ -17,5 +20,16 @@ img{
 }
 
 div:hover img{
+    background-color: chocolate;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.pk-favorite{
+    background-color: rgb(150, 199, 101);
+}
+.pk-favorite img{
     background-color: chocolate;
 }

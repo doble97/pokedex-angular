@@ -1,11 +1,4 @@
-<p>lista-pokemon works!</p>
-<app-one-pokemon></app-one-pokemon>
-<app-one-pokemon></app-one-pokemon>
-<app-one-pokemon></app-one-pokemon>
-<app-one-pokemon></app-one-pokemon>
-<app-one-pokemon></app-one-pokemon>
-<app-one-pokemon></app-one-pokemon>
-<app-one-pokemon></app-one-pokemon>
-<app-one-pokemon></app-one-pokemon>
-<app-one-pokemon></app-one-pokemon>
-<app-one-pokemon></app-one-pokemon>
+<div class="pokedex">
+    <app-one-pokemon *ngFor="let pokeUrl of listUrl"  [pokemonUrl]="pokeUrl"></app-one-pokemon>
+
+</div>

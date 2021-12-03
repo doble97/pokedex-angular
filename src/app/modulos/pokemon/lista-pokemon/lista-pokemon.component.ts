@@ -15,11 +15,8 @@ export class ListaPokemonComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.client.getLista().subscribe(result=>{
-
-      this.listUrl = result.results
-      console.log(this.listUrl);
-      
+    this.client.getLista().subscribe(result=>{      
+      this.listUrl = result.results      
     })
   }
 
