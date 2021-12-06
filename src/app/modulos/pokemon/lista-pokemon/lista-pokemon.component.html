@@ -1,4 +1,4 @@
 <div class="pokedex">
-    <app-one-pokemon *ngFor="let pokeUrl of listUrl"  [pokemonUrl]="pokeUrl"></app-one-pokemon>
-
+    <app-one-pokemon *ngFor="let pokeUrl of listUrl"  [pokemonUrl]="pokeUrl" [modalDir]="modalDirective"></app-one-pokemon>
+    <ng-template appModal></ng-template>
 </div>

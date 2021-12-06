@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { ResultPokemon } from 'src/app/entidades/result';
+import { ModalDirective } from '../directivas/modal.directive';
 import { PokemonService } from '../services/pokemon.service';
 
 @Component({
@@ -9,6 +10,7 @@ import { PokemonService } from '../services/pokemon.service';
 })
 export class ListaPokemonComponent implements OnInit {
   public listUrl: Array<ResultPokemon>
+  @ViewChild(ModalDirective,{static:true}) modalDirective!: ModalDirective
 
   constructor(private client:PokemonService) { 
     this.listUrl = []

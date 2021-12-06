@@ -21,7 +21,7 @@ export class FavoritosService {
   public getFavoritePokemons(){
     return this.pokemons
   }
-  public checkFovorite(pokemon:Pokemon):boolean{
+  public  checkFovorite(pokemon:Pokemon):boolean{
     return this.pokemons.filter(x=> x.id==pokemon.id).length==1
   }
 }

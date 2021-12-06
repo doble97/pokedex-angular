@@ -4,6 +4,8 @@ import { ListaPokemonComponent } from './lista-pokemon/lista-pokemon.component';
 import { PokemonRoutingModule } from './pokemon.routing';
 import { FavoritosComponent } from './favoritos/favoritos.component';
 import { OnePokemonComponent } from './componentes/one-pokemon/one-pokemon.component';
+import { ModalDirective } from './directivas/modal.directive';
+import { ModalComponent } from './componentes/modal/modal.component';
 
 
 
@@ -11,7 +13,9 @@ import { OnePokemonComponent } from './componentes/one-pokemon/one-pokemon.compo
   declarations: [
     ListaPokemonComponent,
     FavoritosComponent,
-    OnePokemonComponent
+    OnePokemonComponent,
+    ModalDirective,
+    ModalComponent
   ],
   imports: [
     CommonModule,
