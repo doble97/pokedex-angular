@@ -6,6 +6,7 @@ import { FavoritosComponent } from './favoritos/favoritos.component';
 import { OnePokemonComponent } from './componentes/one-pokemon/one-pokemon.component';
 import { ModalDirective } from './directivas/modal.directive';
 import { ModalComponent } from './componentes/modal/modal.component';
+import { DeleteComponent } from './componentes/delete/delete.component';
 
 
 
@@ -15,7 +16,8 @@ import { ModalComponent } from './componentes/modal/modal.component';
     FavoritosComponent,
     OnePokemonComponent,
     ModalDirective,
-    ModalComponent
+    ModalComponent,
+    DeleteComponent
   ],
   imports: [
     CommonModule,

@@ -1,9 +1,41 @@
 <div class="modal">
-    <div class="pokemon">
-        <div class="content">Contenido</div>
+    <div *ngIf="pokemon" class="pokemon">
+        <div class="content">
+            <div class="title">
+                <h1>{{pokemon.id}}.</h1>
+                <h1>{{pokemon.name | uppercase}}</h1>
+            </div>
+            <div class="sprites">
+                <img src="{{pokemon.sprites.front_img}}" alt="Pokemon de frente">
+                <img src="{{pokemon.sprites.back_img}}" alt="Pokemon de frente">
+            </div>
+            <section class="info">
+                <div class="medidas">
+                    <h2>Altura: </h2>
+                    <p>{{pokemon.height}}</p>
+                </div>
+                <div class="medidas">
+                    <h2>Peso: </h2>
+                    <p>{{pokemon.weight}}</p>
+                </div>
+                <div class="medidas">
+                    <h2>Experiencia base:</h2>
+                    <p>{{pokemon.base_experience}}</p>
+                </div>
+                <div class="medidas">
+                    <h2>Habilidades:</h2>
+                    <p>{{pokemon.abilities}}</p>
+                </div>
+                <div class="medidas">
+                    <h2>Tipo:</h2>
+                    <p>{{pokemon.types}}</p>
+                </div>
+            </section>
+
+        </div>
         <div class="actions">
-            <button class="add">Añadir</button>
-            <button class="cancel">Cancelar</button>
+            <button class="add" (click)="addFavorite()">Añadir</button>
+            <button class="cancel"  (click)="closeModal()">Cancelar</button>
         </div>
     </div>
 </div>

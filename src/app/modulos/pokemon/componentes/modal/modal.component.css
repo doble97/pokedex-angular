@@ -27,12 +27,57 @@
 }
 button{
     width: 30%;
+    height: 2rem;
 }
 .add{
     @apply bg-green-500 border-2 border-green-800 rounded;
 }
 .cancel{
     @apply bg-red-500 border-2 border-red-800 rounded;
+}
+.content{
+    /* background-color: blueviolet; */
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.title{
+    display: flex;
+    gap: 1rem;
+}
+.sprites{
+    display: flex;
+    animation-name: rotateSprites;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes rotateSprites {
+    from{transform: rotateY(0deg);}
+    to{transform: rotateY(360deg);}
+    
+}
+.medidas{
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+.info{
+    margin-bottom: 1rem;
+    /* background-color: red; */
+
+}
+.info > .medidas{
+    margin-bottom: 1rem;
+}
+h2{
+    @apply font-semibold;
+}
+.medidas > p, h2{
+    @apply text-2xl;
 }
 @media only screen and (max-width:600px){
 

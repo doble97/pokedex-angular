@@ -1,0 +1,10 @@
+<div class="container">
+    <div *ngIf="pokemon" class="content">
+        <h2>¿Eliminarlo de favoritos?</h2>
+        <img *ngIf="pokemon" src="{{pokemon.sprites.front_img}}" alt="" srcset="">
+        <div class="actions">
+            <button class="delete" (click)="callback(pokemon)">Eliminarlo</button>
+            <button class="cancel" (click)="cancelModal()">Cancelar</button>
+        </div>
+    </div>
+</div>

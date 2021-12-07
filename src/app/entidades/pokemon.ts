@@ -1,7 +1,10 @@
 export interface Pokemon{
-    img?: string
-    name?: string
-    abilities?: string[]
-    tipo?: string[]
     id: number
+    name: string
+    abilities: string
+    types: string
+    sprites: {front_img: string, back_img:string}
+    weight?: number
+    base_experience: number
+    height: number
 }

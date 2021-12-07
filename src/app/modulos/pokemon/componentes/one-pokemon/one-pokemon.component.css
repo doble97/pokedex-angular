@@ -3,18 +3,21 @@ div{
     margin: 4rem auto;
     padding: 0.4rem;
     /* background-color: chocolate; */
-    background-color: rgb(144,169,183);
+    /* background-color: rgb(144,169,183); */
     align-items: center;
     justify-content: flex-start;
     gap: 2rem;
-    border: 1px black solid;
+    /* border: 1px black solid; */
     border-radius: 1rem;
     margin: 1rem;
     cursor: pointer;
+    overflow-x: hidden;
+    @apply bg-indigo-600 rounded border-2 border-indigo-800;
 }
 img{
-    border: 2px blueviolet solid;
-    border-radius: 50%;
+    /* border: 2px blueviolet solid;
+    border-radius: 50%; */
+    @apply border-2 border-pink-600 rounded-full ;
 }
 
 div:hover img{
@@ -26,8 +29,14 @@ ul{
 }
 
 .pk-favorite{
-    background-color: rgb(150, 199, 101);
+    /* background-color: rgb(150, 199, 101); */
+    @apply bg-green-500;
 }
+
 .pk-favorite img{
     background-color: chocolate;
+}
+
+h3{
+    @apply font-extrabold;
 }

@@ -1,10 +1,10 @@
-<div *ngIf="pokemon" (click)="addPokemon()" [ngClass]="{'pk-favorite': isFavorite}">
-    <img src="{{pokemon.img}}" alt="Pokemon dito">
+<div *ngIf="pokemon" (click)="loadModal()" [ngClass]="{'pk-favorite': isFavorite}">
+    <img src="{{pokemon.sprites.front_img}}" alt="Pokemon dito">
 
     <ul>
         <li><h3>Nombre</h3> {{pokemon.name}}</li>
         <li><h3>Habilidades</h3> {{pokemon.abilities}}</li>
-        <li><h3>Tipo</h3> {{pokemon.tipo}}</li>
+        <li><h3>Tipo</h3> {{pokemon.types}}</li>
     </ul>
 </div>
 <ng-template appModal></ng-template>

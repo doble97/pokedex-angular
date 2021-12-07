@@ -24,4 +24,8 @@ export class FavoritosService {
   public  checkFovorite(pokemon:Pokemon):boolean{
     return this.pokemons.filter(x=> x.id==pokemon.id).length==1
   }
+  public deleteFavorito(pokemon:Pokemon){
+    this.pokemons = this.pokemons.filter(x=> x.id != pokemon.id)
+    return this.pokemons
+  }
 }

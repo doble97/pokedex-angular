@@ -35,8 +35,9 @@ a:hover{
 .content{
     height: 90vh;
     /* background-color: #90A9B7; */
-    background-color: rgb(207,216,222);
+    /* background-color: rgb(207,216,222); */
     overflow-y: auto;
+    @apply bg-gray-900;
 }
 .content::-webkit-scrollbar {
     display: none;

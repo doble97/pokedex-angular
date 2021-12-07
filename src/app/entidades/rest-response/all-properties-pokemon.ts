@@ -1,8 +1,12 @@
 export interface PokemonProperties {
     // abilities: Array<{ ability: { name: string, url: string } }>
-    abilities: Array<{ ability: { name: string } }>
+    id: number  
     name: string
+    abilities: Array<{ ability: { name: string } }>
     types: Array<{ type: { name: string, url: string } }>
     sprites: { front_default: string, back_default: string }
-    id: number
+    weight?: number
+    order: number
+    base_experience: number
+    height: number
 }
